@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        table{
+           margin: auto;
+           text-align: center;
+           background-color: skyblue;
+        }
+        td{
+            width: 50px;
+            height: 50px;
+            border: none;
+        
+        }
+        .a{
+            width:100%;
+            height:100%;
+            box-sizing: border-box;
+            text-align: right;
+            font-size: large;
+        }
+        .c{
+            background-color: gold;
+        }
+        .r{
+            background-color: red;
+        }
+        input[type=button]{
+            width: 100%;
+            height:100%;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input[type=button]:active {
+         background-color: none;
+         box-shadow: 0 2px black;
+         transform: translateY(2px);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="4"><input id="input" class="a" value="" placeholder="0" readonly></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="one()"></td>
+            <td><input type="button" value="2" onclick="two()"></td>
+            <td><input type="button" value="3" onclick="three()"></td>
+            <td><input type="button" value="+" onclick="plus()" class="c"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="four()"></td>
+            <td><input type="button" value="5" onclick="five()"></td>
+            <td><input type="button" value="6" onclick="six()"></td>
+            <td><input type="button" value="-" onclick="minus()" class="c"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="seven()"></td>
+            <td><input type="button" value="8" onclick="eight()"></td>
+            <td><input type="button" value="9" onclick="nine()"></td>
+            <td><input type="button" value="*" onclick="multi()" class="c"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="C" onclick="c()" class="r"></td>
+            <td><input type="button" value="0" onclick="zero()"></td>
+            <td><input type="button" value="=" onclick="equal()"></td>
+            <td><input type="button" value="/" onclick="divide()" class="c"></td>
+        </tr>
+    </table>
+    <script src="calculater.js"></script>
+    </body>
+</html>
